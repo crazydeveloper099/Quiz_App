@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "936323485904",
+    "firebase_url": "https://sample-mcqs.firebaseio.com",
+    "project_id": "sample-mcqs",
+    "storage_bucket": "sample-mcqs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936323485904:android:759d783f4dd038f4084ed5",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936323485904-vt35659enjeecn88dkt8tuin83nvgdlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ17Bw44zTaHs8HAwHC7OjkBalcCPteDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936323485904-vt35659enjeecn88dkt8tuin83nvgdlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

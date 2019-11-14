@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/test"
+        android:label="Quiz App"
+        android:roundIcon="@drawable/test"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".take_quiz"
+            android:label="Quiz"></activity>
+        <activity android:name=".Topic_specific_quiz"
+            android:label="Topics"/>
+        <activity android:name=".Add_quiz"
+            android:label="Add a quiz"/>
+        <activity android:name=".quiz_present"
+            android:label="Active quiz"
+            />
+        <activity
+            android:name=".Signup_activity"
+            android:label="Signup"
+            android:theme="@style/Signup" />
+        <activity
+            android:name=".Login_activity"
+            android:theme="@style/Login"
+            android:label="Quiz App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="Dashboard"/>
+    </application>
+
+</manifest>

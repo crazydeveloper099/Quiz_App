@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:elevation="3dp"
+    fancy:cardCornerRadius="20dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5pt"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10pt"
+
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp">
+        <ProgressBar
+            android:layout_width="20dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:id="@+id/pg_bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:id="@+id/qno"
+        android:layout_marginLeft="5pt"
+
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/max_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Max. Score"
+        android:inputType="number"
+        android:gravity="center"
+        /> <EditText
+        android:id="@+id/add_question_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Add question"
+        android:gravity="center"
+        />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Options"
+                android:layout_margin="5pt"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/radio_group">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+            android:id="@+id/r_op1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+
+            android:id="@+id/r_op2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+
+            android:id="@+id/r_op3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+
+            android:id="@+id/r_op4"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5pt">
+    <EditText
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add option 1"
+
+        android:gravity="center"
+        />
+        <EditText
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add option 2"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add option 3"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add option 4"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5pt">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/remove_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    fancy:fb_borderColor="#000000"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#a8a8a8"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="Remove"
+                    fancy:fb_textColor="#000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/li_upload"
+                android:gravity="center"
+                >
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/upload_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    fancy:fb_borderColor="#000000"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#A8A8A8"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="Upload set"
+                    fancy:fb_textColor="#000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

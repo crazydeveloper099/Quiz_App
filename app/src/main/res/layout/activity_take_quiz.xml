@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5pt"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topic "
+            android:layout_marginBottom="20pt"
+            android:textColor="#000000"
+            android:id="@+id/topic"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textColor="#000000"
+            android:id="@+id/score"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question:"
+            android:textSize="20sp"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question "
+        android:layout_margin="10pt"
+        android:textSize="18sp"
+        android:id="@+id/question_take_quiz"
+        android:gravity="center"
+
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:layout_marginBottom="5pt"
+            android:textSize="20sp"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#000000"
+                android:id="@+id/r_op1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#000000"
+
+                android:id="@+id/r_op2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#000000"
+
+                android:id="@+id/r_op3"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#000000"
+
+                android:id="@+id/r_op4"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5pt">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000"/>
+            <TextView
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="option 1"
+                android:textSize="18sp"
+                android:layout_marginTop="5pt"
+
+                android:layout_marginBottom="5pt"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000"/>
+            <TextView
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="option 2"
+                android:textSize="18sp"
+                android:layout_marginTop="5pt"
+                android:layout_marginBottom="5pt"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000"/>
+            <TextView
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="option 3"
+                android:textSize="18sp"
+                android:layout_marginTop="5pt"
+                android:layout_marginBottom="5pt"
+                android:gravity="center" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000"/>
+            <TextView
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="option 4"
+                android:textSize="18sp"
+                android:layout_marginTop="5pt"
+                android:layout_marginBottom="5pt"
+
+                android:gravity="center" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5pt"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#00bfff"
+        fancy:fb_focusColor="#FFFFFF"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        fancy:fb_text="Next"
+        fancy:fb_textColor="#FFFFFF"
+        />
+</RelativeLayout>

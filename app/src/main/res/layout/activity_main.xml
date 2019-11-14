@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2f4f4f"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:padding="20pt"
+    android:elevation="5dp"
+
+    fancy:cardBackgroundColor="#00abe5"
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20pt"
+       >
+
+        <mehdi.sakout.fancybuttons.FancyButton
+
+            android:id="@+id/add_quiz"
+            android:layout_width="match_parent"
+            fancy:fb_text="Add a quiz"
+            android:layout_marginLeft="20pt"
+            android:layout_marginRight="20pt"
+            fancy:fb_radius="50dp"
+            fancy:fb_textSize="18sp"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_borderColor="#FFFFFF"
+
+            fancy:fb_defaultColor="#00abe5"
+            android:layout_height="20pt"
+            android:layout_marginTop="10pt"/>
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:id="@+id/take_quiz"
+        android:layout_width="match_parent"
+        fancy:fb_text="Take up a quick quiz !"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        fancy:fb_radius="50dp"
+
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textSize="18sp"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_defaultColor="#00abe5"
+        android:layout_height="20pt"
+        android:layout_marginTop="10pt"/>
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        >
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:id="@+id/my_quiz"
+        android:layout_width="match_parent"
+        fancy:fb_text="My quiz"
+        android:layout_marginLeft="20pt"
+        fancy:fb_textSize="18sp"
+
+        android:layout_marginRight="20pt"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_borderColor="#00cc00"
+        fancy:fb_defaultColor="#00cc00"
+        android:layout_height="20pt"
+       />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#A8A8A8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#ffa500"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Logout"
+            fancy:fb_textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

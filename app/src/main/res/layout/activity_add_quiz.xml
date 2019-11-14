@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f3"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Add_quiz">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="Add a quiz" />
+    <EditText
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/title_quiz"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:textSize="18sp"
+        android:hint="Title of quiz" />
+    <EditText
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/creator_quiz"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:textSize="18sp"
+        android:hint="Creator of quiz" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_add_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5pt"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#00bfff"
+        fancy:fb_focusColor="#FFFFFF"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Add a question"
+        fancy:fb_textColor="#FFFFFF"
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_list"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="5pt"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
+</ScrollView>
